@@ -8,21 +8,21 @@ spring:
       master:
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://192.168.0.108:3306/test_db?useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false&useSSL=false&serverTimezone=GMT
-        username: yehongzhi
-        password: YHZ@1234
+        url: jdbc:mysql://192.168.100.252:3307/tms_biz?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull&useSSL=true&verifyServerCertificate=false
+        username: user_biz
+        password: jd83j2judm4
       slave0:
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://192.168.0.109:3306/test_db?useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false&useSSL=false&serverTimezone=GMT
-        username: yehongzhi
-        password: YHZ@1234
+        url: jdbc:mysql://192.168.100.252:3307/tms_base?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull&useSSL=true&verifyServerCertificate=false
+        username: user_base
+        password: uw82jx7k3oo92yhs
       slave1:
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://192.168.0.110:3306/test_db?useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false&useSSL=false&serverTimezone=GMT
-        username: yehongzhi
-        password: YHZ@1234
+        url: jdbc:mysql://192.168.100.252:3307/tms_log?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull&useSSL=true&verifyServerCertificate=false
+        username: user_log
+        password: fjw2ulr8djexi9s
     props:
       sql.show: true
     masterslave:
